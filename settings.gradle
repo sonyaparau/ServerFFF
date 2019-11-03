@@ -1,0 +1,5 @@
+rootProject.name = 'Server'
+include 'persistence'
+include 'business'
+include 'server'
+
