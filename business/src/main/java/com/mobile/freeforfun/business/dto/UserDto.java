@@ -1,6 +1,6 @@
 package com.mobile.freeforfun.business.dto;
 
-import com.mobile.freeforfun.persistence.model.Role;
+import com.mobile.freeforfun.persistence.enums.ERoleType;
 import lombok.*;
 import java.io.Serializable;
 
@@ -16,5 +16,5 @@ public class UserDto implements Serializable {
     private String email;
     private String mobileNumber;
     private String username;
-    private Role role;
+    private ERoleType role;
 }
