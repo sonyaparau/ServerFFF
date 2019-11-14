@@ -62,4 +62,33 @@ public class UserService implements IUserService{
         else
             throw new BusinessException("Invalid username. Password could not be changed!","fff-002");
     }
+
+    @Override
+    public UserDto saveUser(User user) throws BusinessException {
+
+        if(userRepository.findByUsername(user.getUsername())!= null)
+            throw new BusinessException("Username already exists in the DB","fff-003");
+
+        if(userRepository.findByEmail(user.getEmail()) != null)
+            throw new BusinessException("Email already exists in the DB","fff-004");
+
+        String hashedNewPassword = Hashing.sha256().hashString(user.getPassword(), StandardCharsets.UTF_8).toString();
+        user.setPassword(hashedNewPassword);
+        userRepository.save(user);
+        return userMapper.toDto(user);
+    }
+
+    @Override
+    public UserDto updateUser(User user){
+        User userById = userRepository.getOne(user.getId());
+        userById.setEmail(user.getEmail());
+        String hashedNewPassword = Hashing.sha256().hashString(user.getPassword(), StandardCharsets.UTF_8).toString();
+        userById.setPassword(hashedNewPassword);
+        userById.setMobileNumber(user.getMobileNumber());
+        userById.setLastName(user.getLastName());
+        userById.setFirstName(user.getFirstName());
+        userById.setUsername(user.getUsername());
+        userRepository.save(userById);
+        return userMapper.toDto(userById);
+    }
 }
