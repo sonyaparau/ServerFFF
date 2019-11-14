@@ -79,7 +79,7 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public UserDto updateUser(User user) throws BusinessException {
+    public UserDto updateUser(User user){
         User userById = userRepository.getOne(user.getId());
         userById.setEmail(user.getEmail());
         String hashedNewPassword = Hashing.sha256().hashString(user.getPassword(), StandardCharsets.UTF_8).toString();
