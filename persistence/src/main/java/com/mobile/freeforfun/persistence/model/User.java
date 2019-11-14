@@ -24,8 +24,7 @@ public class User {
     private static final String USERNAME_COLUMN = "username";
     private static final String ROLE_COLUMN = "role";
 
-
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name=ID_USER_COLUMN)
     private Long id;
