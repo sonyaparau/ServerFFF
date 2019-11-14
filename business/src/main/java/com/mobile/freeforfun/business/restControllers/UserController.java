@@ -5,6 +5,7 @@ import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.service.UserService;
 import com.mobile.freeforfun.business.utils.ApiEndpoints;
 import com.mobile.freeforfun.business.validators.UserValidator;
+import com.mobile.freeforfun.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -60,6 +61,30 @@ public class UserController {
             UserValidator.validateChangedPassword(newPassword);
             userService.changePassword(username, newPassword);
             return new ResponseEntity<>("Password was successfully changed!", HttpStatus.OK);
+        } catch(BusinessException exception){
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+        }
+    }
+    @PostMapping(value = ApiEndpoints.REGISTER_NOW,
+            produces = APPLICATION_JSON_VALUE,
+            consumes = APPLICATION_JSON_VALUE)
+    public ResponseEntity register(@RequestBody User user){
+        try{
+            UserValidator.validateRegister(user);
+            userService.saveUser(user);
+            return new ResponseEntity<>("User successfully registered!", HttpStatus.OK);
+        } catch(BusinessException exception){
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+        }
+    }
+    @PostMapping(value = ApiEndpoints.UPDATE_USER_PROFILE,
+            produces = APPLICATION_JSON_VALUE,
+            consumes = APPLICATION_JSON_VALUE)
+    public ResponseEntity update(@RequestBody User user){
+        try{
+            UserValidator.validateRegister(user);
+            userService.updateUser(user);
+            return new ResponseEntity<>("User profile successfully updated!", HttpStatus.OK);
         } catch(BusinessException exception){
             return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
         }
