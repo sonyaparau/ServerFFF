@@ -1,5 +1,6 @@
 package com.mobile.freeforfun.persistence.model;
 
+import com.mobile.freeforfun.persistence.enums.ERoleType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +22,7 @@ public class User {
     private static final String EMAIL_COLUMN = "email";
     private static final String MOBILE_NUMBER_COLUMN = "mobile_number";
     private static final String USERNAME_COLUMN = "username";
-    private static final String ID_ROLE_COLUMN = "id_roles";
+    private static final String ROLE_COLUMN = "role";
 
 
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -50,7 +51,7 @@ public class User {
     @Column(name=USERNAME_COLUMN)
     private String username;
 
-    @ManyToOne
-    @JoinColumn(name = ID_ROLE_COLUMN)
-    private Role role;
+    @Column(name = ROLE_COLUMN)
+    @Enumerated(EnumType.ORDINAL)
+    private ERoleType role;
 }
