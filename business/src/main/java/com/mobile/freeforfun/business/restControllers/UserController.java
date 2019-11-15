@@ -27,8 +27,7 @@ public class UserController {
     }
 
     @PostMapping(value = ApiEndpoints.LOGIN,
-            produces = APPLICATION_JSON_VALUE,
-            consumes = APPLICATION_JSON_VALUE)
+            produces = APPLICATION_JSON_VALUE)
     public ResponseEntity loginUser(@PathVariable("username") String username,
                                     @PathVariable("password") String password){
         try{
@@ -36,7 +35,7 @@ public class UserController {
             userService.login(username, password);
             return new ResponseEntity<>("Successfully login!", HttpStatus.OK);
         } catch(BusinessException exception){
-            return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.OK);
         }
     }
 
