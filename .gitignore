@@ -31,3 +31,4 @@ out/
 *.ipr
 *.iws
 misc.xml
+*.properties
