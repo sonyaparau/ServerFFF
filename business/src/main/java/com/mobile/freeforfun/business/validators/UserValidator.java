@@ -23,8 +23,8 @@ public class UserValidator {
         return phoneNumber.matches("^(004|\\+4)?07[0-9]{8}$");
     }
     static boolean validateName(String name){
-        return name.matches("^[A-ZÜÄÖÂÎĂȚȘÁÉÓŐÚŰ][a-zA-Zșțăîâäöüßáéóőúű]{0,30}[- ]?" +
-                "[a-zșțăîâäöüáéóőúűßA-ZÜÄÖÂÎĂȚȘÁÉÓŐÚŰ]{0,30}[a-zșțăîâäöüßáéóőúű]$");
+        return name.matches("^[A-Z][a-zA-Z]{0,30}[- ]?" +
+                "[a-zA-Z]{0,30}[a-z]$");
     }
     /**
      * Sa contina mai mult de 3 caractere.

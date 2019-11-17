@@ -32,3 +32,4 @@ out/
 *.iws
 misc.xml
 *.properties
+*.gradle
