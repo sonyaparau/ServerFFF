@@ -5,9 +5,9 @@ import com.google.common.hash.Hashing;
 import com.mobile.freeforfun.business.dto.UserDto;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.mapper.UserMapper;
+import com.mobile.freeforfun.business.mapper.UserMapperImpl;
 import com.mobile.freeforfun.persistence.repo.UserRepository;
 import com.mobile.freeforfun.persistence.model.User;
-import org.hibernate.hql.spi.id.AbstractMultiTableBulkIdStrategyImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,18 +23,20 @@ public class UserService implements IUserService{
     private UserMapper userMapper;
 
     @Autowired
-    public UserService(UserRepository userRepository, UserMapper userMapper) {
+    public UserService(UserRepository userRepository, UserMapperImpl userMapper) {
         this.userRepository = userRepository;
         this.userMapper = userMapper;
     }
 
     @Override
     public UserDto login(String username, String password) throws BusinessException {
-        User user;
         String hashedPassword = Hashing.sha256().hashString(password, StandardCharsets.UTF_8).toString();
-        user = userRepository.findByUsernameAndPassword(username, hashedPassword);
-        if(user != null)
-            return userMapper.toDto(user);
+        User user = userRepository.findByUsernameAndPassword(username, hashedPassword);
+        UserDto userDto;
+        if(user != null){
+            userDto =  userMapper.toDto(user);
+            return userDto;
+        }
         else
             throw new BusinessException("Invalid username or password!","fff-001");
     }

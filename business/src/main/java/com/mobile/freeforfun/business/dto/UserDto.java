@@ -2,6 +2,8 @@ package com.mobile.freeforfun.business.dto;
 
 import com.mobile.freeforfun.persistence.enums.ERoleType;
 import lombok.*;
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 
 @Data
