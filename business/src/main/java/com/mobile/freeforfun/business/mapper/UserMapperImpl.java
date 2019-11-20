@@ -1,6 +1,7 @@
 package com.mobile.freeforfun.business.mapper;
 
 import com.mobile.freeforfun.business.dto.UserDto;
+import com.mobile.freeforfun.business.dto.UserDtoWithPicture;
 import com.mobile.freeforfun.persistence.model.User;
 import org.springframework.stereotype.Component;
 
@@ -26,6 +27,21 @@ public class UserMapperImpl implements UserMapper {
         userDto.setUsername( user.getUsername() );
         userDto.setRole( user.getRole() );
         return userDto;
+    }
+
+    @Override
+    public UserDtoWithPicture toDtoPicture(User user) {
+        UserDtoWithPicture userDtoWithPicture = new UserDtoWithPicture();
+        userDtoWithPicture.setId( user.getId() );
+        userDtoWithPicture.setFirstName( user.getFirstName() );
+        userDtoWithPicture.setLastName( user.getLastName() );
+        userDtoWithPicture.setPassword( user.getPassword() );
+        userDtoWithPicture.setEmail( user.getEmail() );
+        userDtoWithPicture.setMobileNumber( user.getMobileNumber() );
+        userDtoWithPicture.setUsername( user.getUsername() );
+        userDtoWithPicture.setRole( user.getRole() );
+        userDtoWithPicture.setPicture( user.getPicture() );
+        return userDtoWithPicture;
     }
 
     @Override
