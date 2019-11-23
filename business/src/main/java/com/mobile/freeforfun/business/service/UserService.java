@@ -104,14 +104,14 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public String forgotPassword(String email){
+    public String forgotPassword(String email) {
         User user = userRepository.findByEmail(email);
         StringBuilder message = new StringBuilder();
         int length = 6;
         boolean useLetters = true;
         boolean useNumbers = false;
         String newPassword = RandomStringUtils.random(length, useLetters, useNumbers);
-        if(user != null){
+        if (user != null) {
             String encryptedNewPassword = Hashing.sha256().hashString(newPassword, StandardCharsets.UTF_8).toString();
             String subject = "Recover your FreeForFun? password";
             message.append("Hello, ");
@@ -142,13 +142,10 @@ public class UserService implements IUserService{
         }
         return "The email you entered is not subscribed to the application!";
     }
-
-	@Override
-	public UserDtoWithPicture uploadPictureToUser(Long userId, Blob picture) {
-		User userById = userRepository.getOne(userId);
-		userById.setPicture(picture);
-		userRepository.save(userById);
-		return userMapper.toDtoPicture(userById);
-	}
-
+    public UserDtoWithPicture uploadPictureToUser(String username, Blob picture) {
+        User userById = userRepository.findByUsername(username);
+        userById.setPicture(picture);
+        userRepository.save(userById);
+        return userMapper.toDtoPicture(userById);
+    }
 }
