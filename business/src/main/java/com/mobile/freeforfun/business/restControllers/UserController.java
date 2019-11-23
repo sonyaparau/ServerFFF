@@ -14,8 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import javax.print.attribute.standard.Media;
 import javax.sql.rowset.serial.SerialException;
 
 import java.io.IOException;
@@ -53,14 +51,13 @@ public class UserController {
     }
 
     @PostMapping(value = ApiEndpoints.DELETE_ACCOUNT,
-            produces = APPLICATION_JSON_VALUE,
-            consumes = APPLICATION_JSON_VALUE)
+            produces = APPLICATION_JSON_VALUE)
     public ResponseEntity deleteUserAccount(@PathVariable("username") String username){
         try{
             userService.deletedAccount(username);
             return new ResponseEntity<>("Account was successfully deleted!", HttpStatus.OK);
         } catch(BusinessException exception){
-            return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
         }
     }
 
