@@ -22,6 +22,7 @@ public class UserValidator {
     static boolean validateROPhoneNumber(String phoneNumber) {
         return phoneNumber.matches("^(004|\\+4)?07[0-9]{8}$");
     }
+
     static boolean validateName(String name){
         return name.matches("^[A-Z][a-zA-Z]{0,30}[- ]?" +
                 "[a-zA-Z]{0,30}[a-z]$");

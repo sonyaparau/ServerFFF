@@ -1,8 +1,7 @@
 package com.mobile.freeforfun.business.service;
-
-
 import com.google.common.hash.Hashing;
 import com.mobile.freeforfun.business.dto.UserDto;
+import com.mobile.freeforfun.business.dto.UserDtoWithPicture;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.mapper.UserMapper;
 import com.mobile.freeforfun.business.mapper.UserMapperImpl;
@@ -16,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.mail.MessagingException;
 import javax.transaction.Transactional;
 import java.nio.charset.StandardCharsets;
+import java.sql.Blob;
 
 
 @Service
@@ -142,4 +142,13 @@ public class UserService implements IUserService{
         }
         return "The email you entered is not subscribed to the application!";
     }
+
+	@Override
+	public UserDtoWithPicture uploadPictureToUser(Long userId, Blob picture) {
+		User userById = userRepository.getOne(userId);
+		userById.setPicture(picture);
+		userRepository.save(userById);
+		return userMapper.toDtoPicture(userById);
+	}
+
 }

@@ -1,8 +1,11 @@
 package com.mobile.freeforfun.business.service;
 
 import com.mobile.freeforfun.business.dto.UserDto;
+import com.mobile.freeforfun.business.dto.UserDtoWithPicture;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.persistence.model.User;
+
+import java.sql.Blob;
 
 public interface IUserService{
     UserDto login(String username, String password) throws BusinessException;
@@ -11,4 +14,5 @@ public interface IUserService{
     UserDto saveUser(User user) throws BusinessException;
     UserDto updateUser(User user) throws BusinessException;
     String forgotPassword(String username);
+	UserDtoWithPicture uploadPictureToUser(Long userId, Blob picture);
 }

@@ -10,8 +10,17 @@ import com.mobile.freeforfun.business.validators.UserValidator;
 import com.mobile.freeforfun.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.print.attribute.standard.Media;
+import javax.sql.rowset.serial.SerialException;
+
+import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
@@ -82,7 +91,8 @@ public class UserController {
         }
     }
     @PostMapping(value = ApiEndpoints.UPDATE_USER_PROFILE,
-            produces = APPLICATION_JSON_VALUE)
+            produces = APPLICATION_JSON_VALUE,
+            consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity update(@RequestBody User user){
         try{
             UserValidator.validateRegister(user);
@@ -104,4 +114,22 @@ public class UserController {
             return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
         }
     }
+
+	@PostMapping(value = ApiEndpoints.UPLOAD_USER_PICTURE,
+			consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+	public ResponseEntity upload(@PathVariable("userId") Long userId,
+			@RequestParam("file")MultipartFile file){
+		try {
+			byte[] array = file.getBytes();
+			Blob blob = new javax.sql.rowset.serial.SerialBlob(array);
+			userService.uploadPictureToUser(userId,blob);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (SerialException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return new ResponseEntity<>("File is uploaded successfully",HttpStatus.OK);
+	}
 }
