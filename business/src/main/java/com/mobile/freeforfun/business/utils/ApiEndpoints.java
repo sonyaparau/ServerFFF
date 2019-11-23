@@ -13,5 +13,6 @@ public class ApiEndpoints {
     public static final String REGISTER_NOW = "/register";
     public static final String UPDATE_USER_PROFILE="/update";
     public static final String FORGOT_PASSWORD = "/forgot_password/{email}";
-	public static final String UPLOAD_USER_PICTURE="/upload/{userId}";
+    public static final String UPLOAD_USER_PICTURE="/upload/{username}";
+
 }

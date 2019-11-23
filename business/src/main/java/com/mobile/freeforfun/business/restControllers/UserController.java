@@ -107,26 +107,24 @@ public class UserController {
             UserValidator.validateForgotPasword(email);
             String forgotPasswordMessage = userService.forgotPassword(email);
             return new ResponseEntity<>(forgotPasswordMessage, HttpStatus.OK);
-        } catch(BusinessException exception){
-            return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
+        } catch(BusinessException exception) {
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED); }  }
+    @PostMapping(value = ApiEndpoints.UPLOAD_USER_PICTURE,
+    consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity upload(@PathVariable("username") String username,
+                                 @RequestParam("bitmap")MultipartFile file){
+        try {
+            byte[] array = file.getBytes();
+            Blob blob = new javax.sql.rowset.serial.SerialBlob(array);
+            userService.uploadPictureToUser(username,blob);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SerialException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+                return new ResponseEntity<>("File is uploaded successfully",HttpStatus.OK);
     }
 
-	@PostMapping(value = ApiEndpoints.UPLOAD_USER_PICTURE,
-			consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-	public ResponseEntity upload(@PathVariable("userId") Long userId,
-			@RequestParam("file")MultipartFile file){
-		try {
-			byte[] array = file.getBytes();
-			Blob blob = new javax.sql.rowset.serial.SerialBlob(array);
-			userService.uploadPictureToUser(userId,blob);
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (SerialException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return new ResponseEntity<>("File is uploaded successfully",HttpStatus.OK);
-	}
 }
