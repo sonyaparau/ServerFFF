@@ -56,16 +56,17 @@ public class UserController {
     }
 
     @PostMapping(value = ApiEndpoints.CHANGE_PASSWORD,
-            produces = APPLICATION_JSON_VALUE,
-            consumes = APPLICATION_JSON_VALUE)
+            produces = APPLICATION_JSON_VALUE)
     public ResponseEntity changePassword(@PathVariable("username") String username,
+                                    @PathVariable("oldPassword") String oldPassword,
                                     @PathVariable("newPassword") String newPassword){
         try{
+            UserValidator.validateChangedPassword(oldPassword);
             UserValidator.validateChangedPassword(newPassword);
-            userService.changePassword(username, newPassword);
-            return new ResponseEntity<>("Password was successfully changed!", HttpStatus.OK);
+            String result = userService.changePassword(username, oldPassword, newPassword);
+            return new ResponseEntity<>(result, HttpStatus.OK);
         } catch(BusinessException exception){
-            return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
         }
     }
     @PostMapping(value = ApiEndpoints.REGISTER_NOW,
@@ -81,8 +82,7 @@ public class UserController {
         }
     }
     @PostMapping(value = ApiEndpoints.UPDATE_USER_PROFILE,
-            produces = APPLICATION_JSON_VALUE,
-            consumes = APPLICATION_JSON_VALUE)
+            produces = APPLICATION_JSON_VALUE)
     public ResponseEntity update(@RequestBody User user){
         try{
             UserValidator.validateRegister(user);
@@ -90,6 +90,18 @@ public class UserController {
             return new ResponseEntity<>("User profile successfully updated!", HttpStatus.OK);
         } catch(BusinessException exception){
             return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+        }
+    }
+
+    @PostMapping(value = ApiEndpoints.FORGOT_PASSWORD,
+            produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity forgotPassword(@PathVariable("email") String email){
+        try{
+            UserValidator.validateForgotPasword(email);
+            String forgotPasswordMessage = userService.forgotPassword(email);
+            return new ResponseEntity<>(forgotPasswordMessage, HttpStatus.OK);
+        } catch(BusinessException exception){
+            return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
         }
     }
 }

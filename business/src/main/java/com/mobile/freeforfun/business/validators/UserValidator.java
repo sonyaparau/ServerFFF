@@ -74,4 +74,10 @@ public class UserValidator {
             throw new BusinessException("Password must have more than 3 characters.", "fff- validation002");
         }
     }
+
+    public static void validateForgotPasword(String email) throws BusinessException {
+        if (!validateEmail(email)) {
+            throw new BusinessException("Email is not valid.", "fff-validation004");
+        }
+    }
 }
