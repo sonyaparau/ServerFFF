@@ -9,6 +9,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class UserDto implements Serializable {
 
     private Long id;
