@@ -2,38 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941cdb3c-3496-4aff-b3a2-e6f68f606a6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/LocalDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/ReviewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReviewMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReviewMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/LocalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/dto/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/mapper/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/mapper/UserMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/restControllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/restControllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/utils/ApiEndpoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/utils/ApiEndpoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/ApiEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/ApiEndpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/build/classes/java/main/com/mobile/freeforfun/persistence/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/build/classes/java/main/com/mobile/freeforfun/persistence/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/exceptions/BusinessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/mapper/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/restControllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/utils/ApiEndpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/build/classes/java/main/com/mobile/freeforfun/business/validators/UserValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/out/production/classes/com/mobile/freeforfun/business/mapper/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/out/production/classes/com/mobile/freeforfun/business/mapper/UserMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/build/classes/java/main/com/mobile/freeforfun/persistence/enums/ERoleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/build/classes/java/main/com/mobile/freeforfun/persistence/exceptions/RepositoryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/build/classes/java/main/com/mobile/freeforfun/persistence/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/build/classes/java/main/com/mobile/freeforfun/persistence/repo/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/build/classes/java/main/com/mobile/freeforfun/main/FreeForFunApplication.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -110,7 +96,52 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/009afc63-c433-4357-a9f2-8b6863b8444d/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/mobile/freeforfun/main/FreeForFunApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,8 +160,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Sonya Parau &lt;sonyaparau@yahoo.com&gt;Del" />
         <option value="Sonya Parau &lt;sonyaparau@yahoo.com&gt;" />
+        <option value="Sonya Parau &lt;sonyaparau@yahoo.com&gt;Del" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,6 +208,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/009afc63-c433-4357-a9f2-8b6863b8444d/console.sql" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewService.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewServiceImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -187,17 +219,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="729" />
-    <option name="height" value="1038" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,62 +274,40 @@
             <path>
               <item name="Server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="restControllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="persistence" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,7 +471,10 @@
       <workItem from="1574597199332" duration="954000" />
       <workItem from="1574603548986" duration="750000" />
       <workItem from="1574670508249" duration="1000" />
-      <workItem from="1574952989239" duration="10110000" />
+      <workItem from="1574952989239" duration="12811000" />
+      <workItem from="1575008520656" duration="103000" />
+      <workItem from="1575016996263" duration="313000" />
+      <workItem from="1575388557513" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="working initial project without role entity">
       <created>1573590610712</created>
@@ -499,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574520542397</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Local and Review Components with Dtos, Services, Repositories and Mappers">
+      <created>1574963770342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574963770342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32064000" />
+    <option name="totallyTimeSpent" value="37260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,9 +534,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3295302" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26174498" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -527,17 +547,17 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17705382" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15580736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3427762" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32765958" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32719547" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013423" side_tool="true" weight="0.25212464" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4986577" weight="0.058073655" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4986577" weight="0.0878187" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
@@ -549,7 +569,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.08053691" />
       <window_info anchor="right" id="Database" order="7" weight="0.069127515" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -646,7 +666,8 @@
     <MESSAGE value="Merge branch 'develop' of https://github.com/sonyaparau/ServerFFF into feature_sonya&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.10/fileContent/annotation-processors.bin&#10;#&#9;.gradle/4.10/fileContent/fileContent.lock&#10;#&#9;.gradle/4.10/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.10/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.10/fileHashes/resourceHashesCache.bin&#10;#&#9;.gradle/4.10/javaCompile/classAnalysis.bin&#10;#&#9;.gradle/4.10/javaCompile/jarAnalysis.bin&#10;#&#9;.gradle/4.10/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.10/javaCompile/taskHistory.bin&#10;#&#9;.gradle/4.10/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.10/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/restControllers/UserController.class&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/service/IUserService.class&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/utils/ApiEndpoints.class&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/validators/UserValidator.class&#10;#&#9;business/build/libs/business-1.0-SNAPSHOT.jar&#10;#&#9;business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java&#10;#&#9;business/src/main/java/com/mobile/freeforfun/business/service/IUserService.java&#10;#&#9;business/src/main/java/com/mobile/freeforfun/business/service/UserService.java&#10;#&#9;business/src/main/java/com/mobile/freeforfun/business/utils/ApiEndpoints.java" />
     <MESSAGE value="Delete account" />
     <MESSAGE value="Backup Sprint 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backup Sprint 1" />
+    <MESSAGE value="Local and Review Components with Dtos, Services, Repositories and Mappers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Local and Review Components with Dtos, Services, Repositories and Mappers" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -737,24 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/mobile/freeforfun/main/FreeForFunApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -870,13 +873,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -1018,16 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1055,10 +1041,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/mobile/freeforfun/main/FreeForFunApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/009afc63-c433-4357-a9f2-8b6863b8444d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

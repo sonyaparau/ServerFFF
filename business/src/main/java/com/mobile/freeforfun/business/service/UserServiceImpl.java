@@ -93,8 +93,7 @@ public class UserServiceImpl implements UserService {
     public UserDto updateUser(User user){
         User userById = userRepository.getOne(user.getId());
         userById.setEmail(user.getEmail());
-        String hashedNewPassword = Hashing.sha256().hashString(user.getPassword(), StandardCharsets.UTF_8).toString();
-        userById.setPassword(hashedNewPassword);
+        userById.setPassword(user.getPassword());
         userById.setMobileNumber(user.getMobileNumber());
         userById.setLastName(user.getLastName());
         userById.setFirstName(user.getFirstName());
