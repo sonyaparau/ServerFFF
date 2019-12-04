@@ -113,7 +113,7 @@ public class UserController {
     @PostMapping(value = ApiEndpoints.UPLOAD_USER_PICTURE,
     consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity upload(@PathVariable("username") String username,
-                                 @RequestParam("bitmap")MultipartFile file){
+                                 @RequestParam("file") MultipartFile file){
         try {
             byte[] array = file.getBytes();
             Blob blob = new javax.sql.rowset.serial.SerialBlob(array);
@@ -125,7 +125,7 @@ public class UserController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-                return new ResponseEntity<>("File is uploaded successfully",HttpStatus.OK);
+            return new ResponseEntity<>("File is uploaded successfully",HttpStatus.OK);
     }
 
 }
