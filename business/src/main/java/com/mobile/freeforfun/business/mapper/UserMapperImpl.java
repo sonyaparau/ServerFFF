@@ -7,26 +7,20 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * Document me.
- *
- * @author msg systems AG; User Name.
- * @since 19.1.2
- */
 @Component
 public class UserMapperImpl implements UserMapper {
     @Override
     public UserDto toDto(User user) {
-        UserDto userDto = new UserDto();
-        userDto.setId( user.getId() );
-        userDto.setFirstName( user.getFirstName() );
-        userDto.setLastName( user.getLastName() );
-        userDto.setPassword( user.getPassword() );
-        userDto.setEmail( user.getEmail() );
-        userDto.setMobileNumber( user.getMobileNumber() );
-        userDto.setUsername( user.getUsername() );
-        userDto.setRole( user.getRole() );
-        return userDto;
+        return UserDto.builder()
+                .id(user.getId())
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .password(user.getPassword())
+                .email(user.getEmail())
+                .mobileNumber(user.getMobileNumber())
+                .username(user.getUsername())
+                .role(user.getRole())
+                .build();
     }
 
     @Override
@@ -46,7 +40,16 @@ public class UserMapperImpl implements UserMapper {
 
     @Override
     public User toEntity(UserDto userDto) {
-        return null;
+        return User.builder()
+                .id(userDto.getId())
+                .firstName(userDto.getFirstName())
+                .lastName(userDto.getLastName())
+                .password(userDto.getPassword())
+                .email(userDto.getEmail())
+                .mobileNumber(userDto.getMobileNumber())
+                .username(userDto.getUsername())
+                .role(userDto.getRole())
+                .build();
     }
 
     @Override

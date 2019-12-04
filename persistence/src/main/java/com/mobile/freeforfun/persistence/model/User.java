@@ -2,6 +2,7 @@ package com.mobile.freeforfun.persistence.model;
 
 import com.mobile.freeforfun.persistence.enums.ERoleType;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
@@ -13,6 +14,7 @@ import java.sql.Blob;
 @Entity
 @Table(name = "users")
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
