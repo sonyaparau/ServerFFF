@@ -2,6 +2,7 @@ package com.mobile.freeforfun.business.service;
 
 import com.mobile.freeforfun.business.dto.LocalDto;
 import com.mobile.freeforfun.business.mapper.LocalMapper;
+import com.mobile.freeforfun.persistence.enums.ELocalType;
 import com.mobile.freeforfun.persistence.repo.LocalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,5 +25,10 @@ public class LocalServiceImpl implements LocalService {
 
 	@Override public List<LocalDto> getAllLocals() {
 		return localMapper.toDtoList(localRepository.findAll());
+	}
+
+	@Override
+	public List<LocalDto> filterLocalAfterType(ELocalType localType) {
+		return localMapper.toDtoList(localRepository.findAllByType(localType));
 	}
 }

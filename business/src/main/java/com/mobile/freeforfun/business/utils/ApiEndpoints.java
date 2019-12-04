@@ -20,5 +20,6 @@ public class ApiEndpoints {
     //LOCAL-Related Paths
     public static final String LOCALS = "/locals";
     public static final String GET_ALL_LOCALS = LOCALS;
+    public static final String FILTER_LOCALS_AFTER_TYPE = "filter/{type}";
 
 }
