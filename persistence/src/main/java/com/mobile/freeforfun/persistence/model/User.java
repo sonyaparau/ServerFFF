@@ -2,15 +2,19 @@ package com.mobile.freeforfun.persistence.model;
 
 import com.mobile.freeforfun.persistence.enums.ERoleType;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.sql.Blob;
 
 @Entity
 @Table(name = "users")
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
@@ -23,9 +27,9 @@ public class User {
     private static final String MOBILE_NUMBER_COLUMN = "mobile_number";
     private static final String USERNAME_COLUMN = "username";
     private static final String ROLE_COLUMN = "role";
+    private static final String PICTURE_COLUMN = "picture";
 
-
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name=ID_USER_COLUMN)
     private Long id;
@@ -54,4 +58,8 @@ public class User {
     @Column(name = ROLE_COLUMN)
     @Enumerated(EnumType.ORDINAL)
     private ERoleType role;
+
+    @Column(name=PICTURE_COLUMN)
+    @Lob
+    private Blob picture;
 }

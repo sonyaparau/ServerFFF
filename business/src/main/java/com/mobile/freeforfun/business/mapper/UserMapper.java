@@ -1,14 +1,13 @@
 package com.mobile.freeforfun.business.mapper;
 
 import com.mobile.freeforfun.business.dto.UserDto;
+import com.mobile.freeforfun.business.dto.UserDtoWithPicture;
 import com.mobile.freeforfun.persistence.model.User;
-import org.mapstruct.Mapper;
-
 import java.util.List;
 
-@Mapper(componentModel = "spring")
 public interface UserMapper {
     UserDto toDto(User user);
+    UserDtoWithPicture toDtoPicture(User user);
     User toEntity(UserDto userDto);
     List<UserDto> toDtoList(List<User> allUsers);
     List<User> toEntityList(List<UserDto> allUserDtos);

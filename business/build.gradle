@@ -23,11 +23,12 @@ dependencies {
     //compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.0.RELEASE'
     // https://mvnrepository.com/artifact/com.google.guava/guava
     compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
-
-    compile group: 'org.mapstruct', name: 'mapstruct-jdk8', version: '1.2.0.Final'
-    compileOnly 'org.mapstruct:mapstruct-processor:1.2.0.Final'
-    annotationProcessor 'org.mapstruct:mapstruct-processor:1.2.0.Final'
-    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+    // https://mvnrepository.com/artifact/javax.mail/mail
+    compile group: 'javax.mail', name: 'mail', version: '1.4.1'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
     compile project(':persistence')
 }
