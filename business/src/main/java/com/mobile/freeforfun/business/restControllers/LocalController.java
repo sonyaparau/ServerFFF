@@ -38,10 +38,13 @@ public class LocalController {
         return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
-	@GetMapping(value = ApiEndpoints.FILTER_LOCALS_AFTER_TYPE,
+	@PostMapping(value = ApiEndpoints.FILTER_LOCALS_AFTER_TYPE,
 			produces = APPLICATION_JSON_VALUE)
-	public List<LocalDto> filterAllLocals(@PathVariable ELocalType type)
+	public ResponseEntity filterAllLocals(@PathVariable ELocalType type)
 	{
-		return localServiceImpl.filterLocalAfterType(type);
+		Gson gson = new GsonBuilder().create();
+		List<LocalDto> locals =localServiceImpl.filterLocalAfterType(type);
+		String response = gson.toJson(locals);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 }
