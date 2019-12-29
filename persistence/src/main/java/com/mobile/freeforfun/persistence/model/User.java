@@ -1,17 +1,19 @@
 package com.mobile.freeforfun.persistence.model;
 
 import com.mobile.freeforfun.persistence.enums.ERoleType;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.NaturalIdCache;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.sql.Blob;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
-@Entity
+@Entity(name = "User")
 @Table(name = "users")
 @Data
 @Builder
@@ -62,4 +64,11 @@ public class User {
     @Column(name=PICTURE_COLUMN)
     @Lob
     private Blob picture;
+
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @JoinColumn(name = ID_USER_COLUMN, updatable = false)
+    @Builder.Default
+    private List<FavouriteLocals> favouriteLocals = new ArrayList<>();
 }
