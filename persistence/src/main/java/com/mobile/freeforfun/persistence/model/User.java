@@ -2,16 +2,12 @@ package com.mobile.freeforfun.persistence.model;
 
 import com.mobile.freeforfun.persistence.enums.ERoleType;
 import lombok.*;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-import org.hibernate.annotations.NaturalIdCache;
-import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.sql.Blob;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Entity(name = "User")
 @Table(name = "users")
@@ -70,5 +66,5 @@ public class User {
     @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.REMOVE, orphanRemoval = true)
     @JoinColumn(name = ID_USER_COLUMN, updatable = false)
     @Builder.Default
-    private List<FavouriteLocals> favouriteLocals = new ArrayList<>();
+    private List<FavouriteLocal> favouriteLocals = new ArrayList<>();
 }

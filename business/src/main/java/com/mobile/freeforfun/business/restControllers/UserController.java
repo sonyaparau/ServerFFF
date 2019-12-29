@@ -117,7 +117,7 @@ public class UserController {
         try {
             byte[] array = file.getBytes();
             Blob blob = new javax.sql.rowset.serial.SerialBlob(array);
-            userServiceImpl.uploadPictureToUser(username,blob);
+            userServiceImpl.uploadPictureToUser(username, blob);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SerialException e) {

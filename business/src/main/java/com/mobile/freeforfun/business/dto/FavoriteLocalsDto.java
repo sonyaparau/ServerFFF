@@ -1,7 +1,7 @@
 package com.mobile.freeforfun.business.dto;
 
 import com.mobile.freeforfun.persistence.enums.EVoteType;
-import com.mobile.freeforfun.persistence.model.FavoriteLocalsCompositeKey;
+import com.mobile.freeforfun.persistence.model.FavouriteLocalCompositeKey;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -10,6 +10,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 @Builder
 public class FavoriteLocalsDto {
-    private FavoriteLocalsCompositeKey id;
+    private FavouriteLocalCompositeKey id;
     private EVoteType voteType;
 }

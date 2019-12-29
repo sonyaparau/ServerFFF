@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.GeneratedValue;
 import java.io.Serializable;
 
 /**
@@ -16,9 +17,11 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Embeddable
-public class FavoriteLocalsCompositeKey implements Serializable {
+public class FavouriteLocalCompositeKey implements Serializable {
+
     @Column(name = "id_user")
     private Long userId;
+
     @Column(name = "id_local")
     private Long localId;
 }
