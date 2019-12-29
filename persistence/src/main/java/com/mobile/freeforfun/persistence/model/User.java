@@ -1,7 +1,12 @@
 package com.mobile.freeforfun.persistence.model;
 
 import com.mobile.freeforfun.persistence.enums.ERoleType;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
