@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FavoriteLocalsRepository extends JpaRepository<FavouriteLocal, FavouriteLocalCompositeKey> {
+public interface FavoriteLocalRepository extends JpaRepository<FavouriteLocal, FavouriteLocalCompositeKey> {
 }

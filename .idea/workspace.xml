@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="941cdb3c-3496-4aff-b3a2-e6f68f606a6e" name="Default Changelist" comment="">
+    <list default="true" id="941cdb3c-3496-4aff-b3a2-e6f68f606a6e" name="Default Changelist" comment="Local and Review Components with Dtos, Services, Repositories and Mappers">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/LocalTableDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/ReservationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/TableTypeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReservationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReservationMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/TableTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/TableTypeMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EReservationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalTableRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReservationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/TableTypeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ERoleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ERoleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EVoteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EVoteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/LocalTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/LocalTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/TableType.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/TableType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -54,7 +83,11 @@
         <item name="freeForFun@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="freeforfun: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="favouritelocals: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="reservations: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - freeForFun@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -97,7 +130,89 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,8 +226,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>role</find>
-      <find>favourite_lo</find>
-      <find>favourite_locals</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,58 +238,64 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature_sonya" />
+        <entry key="$PROJECT_DIR$" value="feature_marga" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/business/build.gradle" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/UserRepository.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/validators/UserValidator.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/UserDtoWithPicture.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java" />
-        <option value="$PROJECT_DIR$/server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/mobile/freeforfun/main/FreeForFunApplication.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/ApiEndpoints.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/MailService.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapper.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/LocalDto.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/UserMapperImpl.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapperImpl.java" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalRepository.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalService.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/LocalController.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalServiceImpl.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReviewRepository.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/ReviewDto.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReviewMapper.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReviewMapperImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/009afc63-c433-4357-a9f2-8b6863b8444d/console.sql" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewService.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewServiceImpl.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocals.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalRepository.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavoriteLocalsCompositeKey.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Table.java" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/009afc63-c433-4357-a9f2-8b6863b8444d/console.sql" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql" />
-        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EReservationType.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ERoleType.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EVoteType.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/LocalTable.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Reservation.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/TableType.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalRepository.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/TableTypeRepository.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReservationRepository.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalTableRepository.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/TableTypeDto.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/LocalTableDto.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/ReservationDto.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableMapper.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReservationMapper.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/TableTypeMapper.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableMapperImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableTypeMapperImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReservationMapperImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/TableTypeMapperImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableService.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationService.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeService.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableServiceImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -243,26 +362,6 @@
             <path>
               <item name="Server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="restControllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="persistence" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -294,26 +393,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="persistence" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerFFF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="persistence" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Server" type="b2602c69:ProjectViewProjectNode" />
@@ -357,7 +436,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574278784408" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -478,10 +557,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.FreeForFunApplication (1)" />
-        <item itemvalue="Application.FreeForFunApplication" />
-        <item itemvalue="Gradle.ServerFFF:server [build]" />
         <item itemvalue="Gradle.ServerFFF:server [clean]" />
+        <item itemvalue="Gradle.ServerFFF:server [build]" />
         <item itemvalue="Gradle.ServerFFF [build]" />
+        <item itemvalue="Application.FreeForFunApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -506,24 +585,7 @@
       <workItem from="1574952989239" duration="12811000" />
       <workItem from="1575008520656" duration="103000" />
       <workItem from="1575016996263" duration="313000" />
-      <workItem from="1575388557513" duration="2740000" />
-      <workItem from="1575477307295" duration="1403000" />
-      <workItem from="1575612304809" duration="1280000" />
-      <workItem from="1575622640978" duration="609000" />
-      <workItem from="1575632232553" duration="26000" />
-      <workItem from="1576307737404" duration="789000" />
-      <workItem from="1576310138968" duration="727000" />
-      <workItem from="1576312137676" duration="1904000" />
-      <workItem from="1576314090116" duration="1640000" />
-      <workItem from="1576316544693" duration="1134000" />
-      <workItem from="1576432155595" duration="1437000" />
-      <workItem from="1576435493008" duration="12000" />
-      <workItem from="1577264485014" duration="3073000" />
-      <workItem from="1577458613467" duration="1270000" />
-      <workItem from="1577460754195" duration="753000" />
-      <workItem from="1577476655928" duration="2447000" />
-      <workItem from="1577520673656" duration="8316000" />
-      <workItem from="1577613805882" duration="7696000" />
+      <workItem from="1575388557513" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="working initial project without role entity">
       <created>1573590610712</created>
@@ -567,25 +629,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574963770342</updated>
     </task>
-    <task id="LOCAL-00007" summary="Merge branch 'develop' of https://github.com/sonyaparau/ServerFFF into feature_sonya&#10;&#10;# Conflicts:&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class">
-      <created>1575391553916</created>
+    <task id="LOCAL-00007" summary="Local and Review Components with Dtos, Services, Repositories and Mappers">
+      <created>1577627796905</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1575391553916</updated>
+      <updated>1577627796905</updated>
     </task>
-    <task id="LOCAL-00008" summary="Vote/Unvote functionality fixed.">
-      <created>1577621136185</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1577621136185</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72437000" />
+    <option name="totallyTimeSpent" value="45428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,8 +653,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25167784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26778522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -608,8 +664,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.51699716" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47308782" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3427762" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -617,22 +673,22 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32719547" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4986577" weight="0.4490085" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013423" side_tool="true" weight="0.25212464" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="15" sideWeight="0.4986577" visible="true" weight="0.101983" />
-      <window_info anchor="bottom" id="SonarLint" order="16" />
-      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5013423" side_tool="true" weight="0.38101983" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4986577" weight="0.13314448" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.2776204" />
+      <window_info anchor="bottom" id="SonarLint" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.03691275" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.19932885" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.1671141" />
+      <window_info anchor="right" id="Database" order="7" weight="0.19932885" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Maven Projects" order="10" />
@@ -729,54 +785,250 @@
     <MESSAGE value="Delete account" />
     <MESSAGE value="Backup Sprint 1" />
     <MESSAGE value="Local and Review Components with Dtos, Services, Repositories and Mappers" />
-    <MESSAGE value="Merge branch 'develop' of https://github.com/sonyaparau/ServerFFF into feature_sonya&#10;&#10;# Conflicts:&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class" />
-    <MESSAGE value="Vote/Unvote functionality fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Vote/Unvote functionality fixed." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Local and Review Components with Dtos, Services, Repositories and Mappers" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>vote</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>localId</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>user</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>user\</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/MailService.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/LocalController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="391">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/ApiEndpoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="72" lean-forward="true" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EReservationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EVoteType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ERoleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/exceptions/RepositoryException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/TableTypeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReservationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalTableRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/TableType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/LocalTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" selection-start-line="38" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/LocalDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Reservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="62" selection-start-line="62" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/exceptions/BusinessException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/LocalTableDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -784,10 +1036,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReviewMapper.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/ReservationDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReservationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,104 +1086,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapperImpl.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="58" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/UserMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/TableTypeDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalTableMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="69">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/LocalMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/mobile/freeforfun/main/FreeForFunApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="910" column="9" selection-start-line="910" selection-start-column="9" selection-end-line="910" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/LocalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="528">
+          <caret line="66" column="22" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="66" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewService.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/TableTypeMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="493">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/utils/ApiEndpoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.0.RELEASE/3392a85ed20efa81a7f9a95e1ae7c5e1e445589c/spring-aop-5.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="185" column="73" selection-start-line="185" selection-start-column="73" selection-end-line="185" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/ReviewRepository.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/TableTypeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -911,292 +1150,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReviewMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.2.0.RELEASE/41630c954a4fc2e5982c6fd5647ee908ea0f8067/spring-core-5.2.0.RELEASE-sources.jar!/org/springframework/util/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="504" selection-start-line="504" selection-end-line="504" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.0.RELEASE/3392a85ed20efa81a7f9a95e1ae7c5e1e445589c/spring-aop-5.2.0.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="e#6113#6114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/LocalRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.2.0.RELEASE/e49b6753442bc35a00ef655e500725881ea59aee/spring-web-5.2.0.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="200" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.0.RELEASE/add389b42b4d1da98888ea19b9e0be6cf548a07b/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="896" selection-start-line="896" selection-end-line="896" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.0.RELEASE/add389b42b4d1da98888ea19b9e0be6cf548a07b/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="951" selection-start-line="951" selection-end-line="951" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.2.0.RELEASE/add389b42b4d1da98888ea19b9e0be6cf548a07b/spring-webmvc-5.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="1011" selection-start-line="1011" selection-end-line="1011" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/009afc63-c433-4357-a9f2-8b6863b8444d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/exceptions/RepositoryException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ELocalType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/ERoleType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#293#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/enums/EVoteType.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/ReservationMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://bdda31e8-7ced-4250-aa02-f2a233e7e862/schema/freeforfun/table/favouritelocals">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.0.RELEASE/3392a85ed20efa81a7f9a95e1ae7c5e1e445589c/spring-aop-5.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.2.0.RELEASE/4c2189dcc397323a0115ddd7570d436cfb07ecdc/spring-tx-5.2.0.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="361" selection-start-line="361" selection-end-line="361" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.0.RELEASE/3392a85ed20efa81a7f9a95e1ae7c5e1e445589c/spring-aop-5.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="748" selection-start-line="748" selection-end-line="748" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.2.0.RELEASE/41630c954a4fc2e5982c6fd5647ee908ea0f8067/spring-core-5.2.0.RELEASE-sources.jar!/org/springframework/cglib/proxy/MethodProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="204">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/LocalTableServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReservationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/TableTypeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/VoteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>

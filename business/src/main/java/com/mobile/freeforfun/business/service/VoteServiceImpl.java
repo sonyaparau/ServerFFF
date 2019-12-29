@@ -7,7 +7,7 @@ import com.mobile.freeforfun.persistence.model.FavouriteLocal;
 import com.mobile.freeforfun.persistence.model.FavouriteLocalCompositeKey;
 import com.mobile.freeforfun.persistence.model.Local;
 import com.mobile.freeforfun.persistence.model.User;
-import com.mobile.freeforfun.persistence.repo.FavoriteLocalsRepository;
+import com.mobile.freeforfun.persistence.repo.FavoriteLocalRepository;
 import com.mobile.freeforfun.persistence.repo.LocalRepository;
 import com.mobile.freeforfun.persistence.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,15 +22,16 @@ import java.util.Optional;
 @Transactional
 public class VoteServiceImpl implements VoteService {
 
-    private FavoriteLocalsRepository favoriteLocalsRepository;
+    private FavoriteLocalRepository favoriteLocalRepository;
     private UserRepository userRepository;
     private LocalRepository localRepository;
     private VoteMapper voteMapper;
 
     @Autowired
-    public VoteServiceImpl(FavoriteLocalsRepository favoriteLocalsRepository, UserRepository userRepository,
+    public VoteServiceImpl(
+			FavoriteLocalRepository favoriteLocalRepository, UserRepository userRepository,
             LocalRepository localRepository, VoteMapper voteMapper) {
-        this.favoriteLocalsRepository = favoriteLocalsRepository;
+        this.favoriteLocalRepository = favoriteLocalRepository;
         this.userRepository = userRepository;
         this.localRepository = localRepository;
         this.voteMapper = voteMapper;
@@ -46,7 +47,7 @@ public class VoteServiceImpl implements VoteService {
             vote.setLocal(local.get());
             vote.setUser(user.get());
             vote.setVoteType(EVoteType.UPVOTE);
-            return voteMapper.toDto(favoriteLocalsRepository.save(vote));
+            return voteMapper.toDto(favoriteLocalRepository.save(vote));
         }
         return null;
     }
@@ -61,14 +62,14 @@ public class VoteServiceImpl implements VoteService {
             vote.setLocal(local.get());
             vote.setUser(user.get());
             vote.setVoteType(EVoteType.DOWNVOTE);
-            return voteMapper.toDto(favoriteLocalsRepository.save(vote));
+            return voteMapper.toDto(favoriteLocalRepository.save(vote));
         }
         return null;
     }
 
     @Override
     public List<FavouriteLocal> getAllVotesOfALocal(Long localId) {
-        List<FavouriteLocal> allVotes = favoriteLocalsRepository.findAll();
+        List<FavouriteLocal> allVotes = favoriteLocalRepository.findAll();
         List<FavouriteLocal> allLocalsVotes = new ArrayList<>();
         allVotes.forEach(voteEntity -> {
             if (localId.equals(voteEntity.getId().getLocalId())) {
@@ -80,7 +81,7 @@ public class VoteServiceImpl implements VoteService {
 
     @Override
     public List<User> getAllUsersWhoVotedALocal(Long localId) {
-        List<FavouriteLocal> allVotes = favoriteLocalsRepository.findAll();
+        List<FavouriteLocal> allVotes = favoriteLocalRepository.findAll();
         List<User> allUsersWhoVoted = new ArrayList<>();
         allVotes.forEach(voteEntity -> {
             if (localId.equals(voteEntity.getId().getLocalId())) {

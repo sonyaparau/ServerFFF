@@ -1,16 +1,9 @@
 package com.mobile.freeforfun.persistence.enums;
 
 import lombok.Getter;
-
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Document me.
- *
- * @author msg systems AG; User Name.
- * @since 19.1.2
- */
 public enum ELocalType {
 
 	RESTAURANT(0),

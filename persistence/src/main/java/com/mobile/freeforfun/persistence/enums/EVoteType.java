@@ -2,12 +2,12 @@ package com.mobile.freeforfun.persistence.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
 import java.util.HashMap;
 import java.util.Map;
 
 @AllArgsConstructor
 public enum EVoteType{
+
     UPVOTE(1),
     DOWNVOTE(-1);
 

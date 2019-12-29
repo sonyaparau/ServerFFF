@@ -10,6 +10,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 @Builder
 public class FavoriteLocalsDto {
+
     private FavouriteLocalCompositeKey id;
     private EVoteType voteType;
 }
