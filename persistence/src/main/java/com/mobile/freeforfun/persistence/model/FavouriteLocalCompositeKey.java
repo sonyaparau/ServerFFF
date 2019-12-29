@@ -19,9 +19,9 @@ import java.io.Serializable;
 @Embeddable
 public class FavouriteLocalCompositeKey implements Serializable {
 
-    @Column(name = "id_user")
-    private Long userId;
-
     @Column(name = "id_local")
     private Long localId;
+
+    @Column(name = "id_user")
+    private Long userId;
 }
