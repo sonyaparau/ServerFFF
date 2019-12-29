@@ -1,7 +1,6 @@
 package com.mobile.freeforfun.persistence.enums;
 
 import lombok.Getter;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +13,7 @@ public enum ERoleType {
     @Getter
     private Integer role;
 
-    private static Map<Integer, ERoleType> map = new HashMap<Integer, ERoleType>();
+    private static Map<Integer, ERoleType> map = new HashMap<>();
     static {
         for (ERoleType roles : ERoleType.values()) {
             map.put(roles.role, roles);
