@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941cdb3c-3496-4aff-b3a2-e6f68f606a6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavoriteLocalsCompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -109,102 +97,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/VoteController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -270,7 +163,6 @@
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/ReviewServiceImpl.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocals.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/dto/FavoriteLocalsDto.java" />
@@ -283,6 +175,7 @@
         <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/Local.java" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql" />
         <option value="$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java" />
       </list>
     </option>
@@ -630,7 +523,7 @@
       <workItem from="1577460754195" duration="753000" />
       <workItem from="1577476655928" duration="2447000" />
       <workItem from="1577520673656" duration="8316000" />
-      <workItem from="1577613805882" duration="6607000" />
+      <workItem from="1577613805882" duration="7696000" />
     </task>
     <task id="LOCAL-00001" summary="working initial project without role entity">
       <created>1573590610712</created>
@@ -681,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575391553916</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Vote/Unvote functionality fixed.">
+      <created>1577621136185</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577621136185</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71348000" />
+    <option name="totallyTimeSpent" value="72437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,7 +598,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25167784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -710,7 +609,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51699716" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51699716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3427762" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -723,7 +622,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.4986577" weight="0.38101983" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="15" sideWeight="0.4986577" visible="true" weight="0.101983" />
       <window_info anchor="bottom" id="SonarLint" order="16" />
       <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5013423" side_tool="true" weight="0.38101983" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -831,7 +730,8 @@
     <MESSAGE value="Backup Sprint 1" />
     <MESSAGE value="Local and Review Components with Dtos, Services, Repositories and Mappers" />
     <MESSAGE value="Merge branch 'develop' of https://github.com/sonyaparau/ServerFFF into feature_sonya&#10;&#10;# Conflicts:&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'develop' of https://github.com/sonyaparau/ServerFFF into feature_sonya&#10;&#10;# Conflicts:&#10;#&#9;business/build/classes/java/main/com/mobile/freeforfun/business/service/UserService.class" />
+    <MESSAGE value="Vote/Unvote functionality fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vote/Unvote functionality fixed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,12 +741,6 @@
           <line>117</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -983,13 +877,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -1202,31 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.2.0.RELEASE/3392a85ed20efa81a7f9a95e1ae7c5e1e445589c/spring-aop-5.2.0.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -1255,12 +1117,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1272,16 +1155,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdda31e8-7ced-4250-aa02-f2a233e7e862/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/restControllers/VoteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="314">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1289,20 +1179,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/mapper/VoteMapperImpl.java">
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/FavouriteLocalCompositeKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/src/main/java/com/mobile/freeforfun/business/service/VoteServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1037">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/com/mobile/freeforfun/persistence/repo/FavoriteLocalsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
