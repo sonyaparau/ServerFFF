@@ -12,8 +12,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Builder
 public class LocalTableDto implements Serializable {
-
 	private Long id;
-	private Boolean free;
+	private Integer numberOfPlaces;
 	private LocalDto local;
 }

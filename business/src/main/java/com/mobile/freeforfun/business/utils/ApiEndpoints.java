@@ -24,5 +24,8 @@ public class ApiEndpoints {
     public static final String UPVOTE = "/upvote/{localId}/{userId}";
     public static final String DOWNVOTE = "/downvote/{localId}/{userId}";
 
-
+    //RESERVATION-Related Paths
+    public static final String RESERVATIONS = "/reservations";
+    public static final String DELETE_RESERVATION = RESERVATIONS + "/delete/{id}";
+    public static final String CREATE_RESERVATION = RESERVATIONS + "/create";
 }

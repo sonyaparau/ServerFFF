@@ -1,5 +1,6 @@
 package com.mobile.freeforfun.business.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.mobile.freeforfun.persistence.enums.EReservationType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,9 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Data
 @AllArgsConstructor
@@ -21,8 +20,11 @@ public class ReservationDto implements Serializable {
 	private UserDto user;
 	private LocalDto local;
 	private Integer numberOfPlaces;
-	private Date dateReservation;
-	private LocalDateTime dateCreation;
-	private Time hourReservation;
+	private LocalTableDto table;
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+	private Timestamp dateTimeReservation;
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+	private Timestamp dateTimeCreation;
 	private EReservationType reservationType;
+	private Timestamp dateTimeLeave;
 }
