@@ -22,17 +22,16 @@ import javax.persistence.Table;
 public class LocalTable {
 
 	private static final String ID_TABLE_COLUMN = "id_table";
-	private static final String FREE_COLUMN = "free";
+	private static final String NUMBER_OF_PLACES_COLUMN = "number_of_places";
 	private static final String ID_LOCAL_COLUMN = "id_local";
-	private static final String ID_TYPE_TABLE_COLUMN = "id_type_table";
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
 	@Column(name = ID_TABLE_COLUMN)
 	private Long id;
 
-	@Column(name = FREE_COLUMN)
-	private Boolean free;
+	@JoinColumn(name = NUMBER_OF_PLACES_COLUMN)
+	private Integer numberOfPlaces;
 
 	@ManyToOne
 	@JoinColumn(name = ID_LOCAL_COLUMN)

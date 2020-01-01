@@ -27,5 +27,11 @@ public class ApiEndpoints {
     public static final String DELETE_VOTE = "/deletevote/{localId}/{userId}";
     public static final String GET_ALL_VOTED_LOCALS = "/votedlocals";
 
-
+    //RESERVATION-Related Paths
+    public static final String RESERVATIONS = "/reservations";
+    public static final String GET_RESERVATIONS_BY_ID = RESERVATIONS + "/{id}";
+    public static final String DELETE_RESERVATION = RESERVATIONS + "/delete/{id}";
+    public static final String CREATE_RESERVATION = RESERVATIONS + "/create";
+    public static final String FILTER_FUTURE_RESERVATIONS_AFTER_USERS = RESERVATIONS + "future/user/{userId}";
+    public static final String FILTER_PAST_RESERVATIONS_AFTER_USERS = RESERVATIONS + "past/user/{userId}";
 }

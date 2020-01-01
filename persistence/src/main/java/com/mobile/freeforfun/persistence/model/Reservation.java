@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,9 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Data
 @NoArgsConstructor
@@ -29,10 +28,11 @@ public class Reservation {
 	private static final String ID_USER_COLUMN = "id_user";
 	private static final String ID_LOCAL_COLUMN = "id_local";
 	private static final String NUMBER_PLACES_COLUMN = "number_places";
-	private static final String DATE_RESERVATION_COLUMN = "date_reservation";
+	private static final String ID_TABLE_COLUMN = "id_table";
+	private static final String DATE_TIME_RESERVATION_COLUMN = "date_time_reservation";
 	private static final String DATE_CREATION_COLUMN = "date_creation";
-	private static final String HOUR_RESERVATION_COLUMN = "hour_reservation";
 	private static final String TYPE_RESERVATION_COLUMN = "type_reservation";
+	private static final String DATE_TIME_LEAVE_COLUMN = "date_time_leave";
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
@@ -50,15 +50,19 @@ public class Reservation {
 	@Column(name = NUMBER_PLACES_COLUMN)
 	private Integer numberOfPlaces;
 
-	@Column(name = DATE_RESERVATION_COLUMN)
-	private Date dateReservation;
+	@ManyToOne
+	@JoinColumn(name = ID_TABLE_COLUMN)
+	private LocalTable table;
+
+	@Column(name = DATE_TIME_RESERVATION_COLUMN)
+	private Timestamp dateTimeReservation;
 
 	@Column(name = DATE_CREATION_COLUMN)
-	private LocalDateTime dateCreation;
-
-	@Column(name = HOUR_RESERVATION_COLUMN)
-	private Time hourReservation;
+	private Timestamp dateCreation;
 
 	@Column(name = TYPE_RESERVATION_COLUMN)
 	private EReservationType reservationType;
+
+	@Column(name = DATE_TIME_LEAVE_COLUMN)
+	private Timestamp dateTimeLeave;
 }

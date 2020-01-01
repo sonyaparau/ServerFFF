@@ -13,11 +13,14 @@ public class ReservationMapperImpl implements ReservationMapper{
 
 	private UserMapper userMapper;
 	private LocalMapper localMapper;
+	private LocalTableMapper tableMapper;
 
 	@Autowired
-	public ReservationMapperImpl(UserMapper userMapper, LocalMapper localMapper) {
+	public ReservationMapperImpl(UserMapper userMapper, LocalMapper localMapper,
+			LocalTableMapper tableMapper) {
 		this.userMapper = userMapper;
 		this.localMapper = localMapper;
+		this.tableMapper = tableMapper;
 	}
 
 	@Override public ReservationDto toDto(Reservation reservation) {
@@ -26,10 +29,11 @@ public class ReservationMapperImpl implements ReservationMapper{
 				.user(userMapper.toDto(reservation.getUser()))
 				.local(localMapper.toDto(reservation.getLocal()))
 				.numberOfPlaces(reservation.getNumberOfPlaces())
-				.dateReservation(reservation.getDateReservation())
-				.dateCreation(reservation.getDateCreation())
-				.hourReservation(reservation.getHourReservation())
+				.table(tableMapper.toDto(reservation.getTable()))
+				.dateTimeReservation(reservation.getDateTimeReservation())
+				.dateTimeCreation(reservation.getDateCreation())
 				.reservationType(reservation.getReservationType())
+				.dateTimeLeave(reservation.getDateTimeLeave())
 				.build();
 	}
 
@@ -39,10 +43,24 @@ public class ReservationMapperImpl implements ReservationMapper{
 				.user(userMapper.toEntity(reservationDto.getUser()))
 				.local(localMapper.toEntity(reservationDto.getLocal()))
 				.numberOfPlaces(reservationDto.getNumberOfPlaces())
-				.dateReservation(reservationDto.getDateReservation())
-				.dateCreation(reservationDto.getDateCreation())
-				.hourReservation(reservationDto.getHourReservation())
+				.table(tableMapper.toEntity(reservationDto.getTable()))
+				.dateTimeReservation(reservationDto.getDateTimeReservation())
+				.dateCreation(reservationDto.getDateTimeCreation())
 				.reservationType(reservationDto.getReservationType())
+				.dateTimeLeave(reservationDto.getDateTimeLeave())
+				.build();
+	}
+
+	@Override public Reservation toEntityWithoutTable(ReservationDto reservationDto) {
+		return Reservation.builder()
+				.id(reservationDto.getId())
+				.user(userMapper.toEntity(reservationDto.getUser()))
+				.local(localMapper.toEntity(reservationDto.getLocal()))
+				.numberOfPlaces(reservationDto.getNumberOfPlaces())
+				.dateTimeReservation(reservationDto.getDateTimeReservation())
+				.dateCreation(reservationDto.getDateTimeCreation())
+				.reservationType(reservationDto.getReservationType())
+				.dateTimeLeave(reservationDto.getDateTimeLeave())
 				.build();
 	}
 

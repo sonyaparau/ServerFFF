@@ -8,6 +8,7 @@ import java.util.List;
 public interface ReservationMapper {
 	ReservationDto toDto(Reservation reservation);
 	Reservation toEntity(ReservationDto reservationDto);
+	Reservation toEntityWithoutTable(ReservationDto reservationDto);
 	List<ReservationDto> toDtoList(List<Reservation> allReservations);
 	List<Reservation> toEntityList(List<ReservationDto> allReservationDtos);
 }

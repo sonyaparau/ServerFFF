@@ -20,7 +20,6 @@ public class LocalTableMapperImpl implements LocalTableMapper{
 	@Override public LocalTableDto toDto(LocalTable localTable) {
 		return LocalTableDto.builder()
 				.id(localTable.getId())
-				.free(localTable.getFree())
 				.local(localMapper.toDto(localTable.getLocal()))
 				.build();
 	}
@@ -28,7 +27,6 @@ public class LocalTableMapperImpl implements LocalTableMapper{
 	@Override public LocalTable toEntity(LocalTableDto localTableDto) {
 		return LocalTable.builder()
 				.id(localTableDto.getId())
-				.free(localTableDto.getFree())
 				.local(localMapper.toEntity(localTableDto.getLocal()))
 				.build();
 	}

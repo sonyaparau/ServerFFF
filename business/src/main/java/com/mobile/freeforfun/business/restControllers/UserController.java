@@ -75,6 +75,7 @@ public class UserController {
             return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
         }
     }
+
     @PostMapping(value = ApiEndpoints.REGISTER_NOW,
             produces = APPLICATION_JSON_VALUE,
             consumes = APPLICATION_JSON_VALUE)
@@ -87,6 +88,7 @@ public class UserController {
             return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
         }
     }
+
     @PostMapping(value = ApiEndpoints.UPDATE_USER_PROFILE,
             produces = APPLICATION_JSON_VALUE,
             consumes = APPLICATION_JSON_VALUE)
