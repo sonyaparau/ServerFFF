@@ -13,13 +13,13 @@ import com.mobile.freeforfun.persistence.model.User;
 import com.mobile.freeforfun.persistence.repo.LocalTableRepository;
 import com.mobile.freeforfun.persistence.repo.ReservationRepository;
 import com.mobile.freeforfun.persistence.repo.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;
 import javax.transaction.Transactional;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
@@ -45,6 +45,11 @@ public class ReservationServiceImpl implements ReservationService{
 		this.userRepository = userRepository;
 		this.reservationMapper = reservationMapper;
 		this.tableMapper = tableMapper;
+	}
+
+	@Override public ReservationDto getReservationById(Long id) {
+		Optional<Reservation> reservation = reservationRepository.findById(id);
+		return reservation.map(value -> reservationMapper.toDto(value)).orElse(null);
 	}
 
 	@Override public void deleteReservation(Long id) throws BusinessException {
@@ -79,11 +84,30 @@ public class ReservationServiceImpl implements ReservationService{
 					" was not created!","fff-002");
 	}
 
-	@Override public List<ReservationDto> getReservationsByUser(Long userId) {
+	@Override public List<ReservationDto> getFutureReservationsByUser(Long userId) {
 		Optional<User> user = userRepository.findById(userId);
 		if(user.isPresent()){
 			List<Reservation> reservations = reservationRepository.findAllByUser(user.get());
-			return reservationMapper.toDtoList(reservations);
+			List<Reservation> futureReservations = new ArrayList<>();
+			for(Reservation reservation: reservations){
+				if(reservation.getDateTimeReservation().after(new Timestamp(System.currentTimeMillis())))
+					futureReservations.add(reservation);
+			}
+			return reservationMapper.toDtoList(futureReservations);
+		}
+		return Collections.emptyList();
+	}
+
+	@Override public List<ReservationDto> getPastReservationsByUser(Long userId) {
+		Optional<User> user = userRepository.findById(userId);
+		if(user.isPresent()){
+			List<Reservation> reservations = reservationRepository.findAllByUser(user.get());
+			List<Reservation> futureReservations = new ArrayList<>();
+			for(Reservation reservation: reservations){
+				if(reservation.getDateTimeReservation().before(new Timestamp(System.currentTimeMillis())))
+					futureReservations.add(reservation);
+			}
+			return reservationMapper.toDtoList(futureReservations);
 		}
 		return Collections.emptyList();
 	}

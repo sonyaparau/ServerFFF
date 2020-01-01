@@ -6,7 +6,9 @@ import com.mobile.freeforfun.business.exceptions.BusinessException;
 import java.util.List;
 
 public interface ReservationService {
+	ReservationDto getReservationById(Long id);
 	void deleteReservation(Long id) throws BusinessException;
 	ReservationDto saveReservation(ReservationDto reservationDto) throws BusinessException;
-	List<ReservationDto> getReservationsByUser(Long userId);
+	List<ReservationDto> getFutureReservationsByUser(Long userId);
+	List<ReservationDto> getPastReservationsByUser(Long userId);
 }

@@ -62,12 +62,30 @@ public class ReservationController {
 		}
 	}
 
-	@PostMapping(value = ApiEndpoints.FILTER_RESERVATIONS_AFTER_USERS,
+	@PostMapping(value = ApiEndpoints.FILTER_FUTURE_RESERVATIONS_AFTER_USERS,
 			produces = APPLICATION_JSON_VALUE)
-	public ResponseEntity getAllLocals(@PathVariable("userId") Long id){
+	public ResponseEntity getFutureReservationsByUser(@PathVariable("userId") Long id){
 		Gson gson = new GsonBuilder().create();
-		List<ReservationDto> reservations = reservationService.getReservationsByUser(id);
+		List<ReservationDto> reservations = reservationService.getFutureReservationsByUser(id);
 		String response = gson.toJson(reservations);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
+	@PostMapping(value = ApiEndpoints.FILTER_PAST_RESERVATIONS_AFTER_USERS,
+			produces = APPLICATION_JSON_VALUE)
+	public ResponseEntity getPastReservationsByUser(@PathVariable("userId") Long id){
+		Gson gson = new GsonBuilder().create();
+		List<ReservationDto> reservations = reservationService.getPastReservationsByUser(id);
+		String response = gson.toJson(reservations);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
+	@PostMapping(value = ApiEndpoints.GET_RESERVATIONS_BY_ID,
+			produces = APPLICATION_JSON_VALUE)
+	public ResponseEntity loginUser(@PathVariable("id") Long id){
+		Gson gson = new GsonBuilder().create();
+		ReservationDto reservation = reservationService.getReservationById(id);
+		String response = gson.toJson(reservation);
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 }
