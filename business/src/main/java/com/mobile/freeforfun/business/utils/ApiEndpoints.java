@@ -23,6 +23,9 @@ public class ApiEndpoints {
     public static final String FILTER_LOCALS_AFTER_TYPE = "filter/{type}";
     public static final String UPVOTE = "/upvote/{localId}/{userId}";
     public static final String DOWNVOTE = "/downvote/{localId}/{userId}";
+    public static final String GET_LOCAL = "/getlocal/{localId}/{userId}";
+    public static final String DELETE_VOTE = "/deletevote/{localId}/{userId}";
+    public static final String GET_ALL_VOTED_LOCALS = "/votedlocals";
 
 
 }

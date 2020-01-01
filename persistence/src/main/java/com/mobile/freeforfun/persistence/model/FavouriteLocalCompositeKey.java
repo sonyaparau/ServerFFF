@@ -1,5 +1,6 @@
 package com.mobile.freeforfun.persistence.model;
 
+import com.mobile.freeforfun.persistence.enums.EVoteType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,4 +25,5 @@ public class FavouriteLocalCompositeKey implements Serializable {
 
     @Column(name = "id_user")
     private Long userId;
+
 }
