@@ -3,7 +3,6 @@ package com.mobile.freeforfun.business.restControllers;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mobile.freeforfun.business.dto.LocalDto;
-import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.service.LocalServiceImpl;
 import com.mobile.freeforfun.business.utils.ApiEndpoints;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.mobile.freeforfun.persistence.enums.ELocalType;
 
-import java.io.IOException;
 import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;

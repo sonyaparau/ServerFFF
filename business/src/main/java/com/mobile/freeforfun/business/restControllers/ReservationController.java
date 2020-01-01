@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.Timestamp;
+
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @CrossOrigin
@@ -33,6 +35,12 @@ public class ReservationController {
 			consumes = APPLICATION_JSON_VALUE)
 	public ResponseEntity createReservation(@RequestBody ReservationDto reservationDto){
 		try{
+			Timestamp creationTime = new Timestamp(reservationDto.getDateTimeCreation()
+					.getTime() - (3600000*2));
+			Timestamp reservationTime =  new Timestamp(reservationDto.getDateTimeReservation()
+					.getTime() - (3600000*2));
+			reservationDto.setDateTimeCreation(creationTime);
+			reservationDto.setDateTimeReservation(reservationTime);
 			reservationService.saveReservation(reservationDto);
 			return new ResponseEntity<>("Reservation successfully created!", HttpStatus.OK);
 		} catch(BusinessException exception){

@@ -145,7 +145,8 @@ public class ReservationServiceImpl implements ReservationService{
 		mailMessage.append(reservation.getNumberOfPlaces());
 		mailMessage.append("\n");
 		mailMessage.append("Date and time of your reservation: ");
-		mailMessage.append(reservation.getDateTimeReservation());
+		mailMessage.append(reservation.getDateTimeReservation().toString().substring(0,
+				reservation.getDateTimeReservation().toString().length()-5));
 		mailMessage.append("\n");
 		mailMessage.append("\n");
 		mailMessage.append("You can cancel your reservation in case you want to change your plans. "

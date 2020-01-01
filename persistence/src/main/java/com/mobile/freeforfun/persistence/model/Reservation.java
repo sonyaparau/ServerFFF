@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -59,7 +58,6 @@ public class Reservation {
 	private Timestamp dateTimeReservation;
 
 	@Column(name = DATE_CREATION_COLUMN)
-	@CreatedDate
 	private Timestamp dateCreation;
 
 	@Column(name = TYPE_RESERVATION_COLUMN)
