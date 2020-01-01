@@ -9,8 +9,10 @@ import com.mobile.freeforfun.persistence.enums.EReservationType;
 import com.mobile.freeforfun.persistence.model.Local;
 import com.mobile.freeforfun.persistence.model.LocalTable;
 import com.mobile.freeforfun.persistence.model.Reservation;
+import com.mobile.freeforfun.persistence.model.User;
 import com.mobile.freeforfun.persistence.repo.LocalTableRepository;
 import com.mobile.freeforfun.persistence.repo.ReservationRepository;
+import com.mobile.freeforfun.persistence.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,7 @@ import javax.mail.MessagingException;
 import javax.transaction.Transactional;
 
 import java.sql.Timestamp;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -28,17 +31,18 @@ public class ReservationServiceImpl implements ReservationService{
 
 	private ReservationRepository reservationRepository;
 	private LocalTableRepository tableRepository;
+	private UserRepository userRepository;
 	private ReservationMapper reservationMapper;
 	private LocalTableMapper tableMapper;
 
-	@Autowired
 	public ReservationServiceImpl(
 			ReservationRepository reservationRepository,
 			LocalTableRepository tableRepository,
-			ReservationMapper reservationMapper,
-			LocalTableMapper tableMapper) {
+			UserRepository userRepository,
+			ReservationMapper reservationMapper, LocalTableMapper tableMapper) {
 		this.reservationRepository = reservationRepository;
 		this.tableRepository = tableRepository;
+		this.userRepository = userRepository;
 		this.reservationMapper = reservationMapper;
 		this.tableMapper = tableMapper;
 	}
@@ -73,6 +77,15 @@ public class ReservationServiceImpl implements ReservationService{
 		else
 			throw new BusinessException("No free places for the chosen date and time! Reservation" +
 					" was not created!","fff-002");
+	}
+
+	@Override public List<ReservationDto> getReservationsByUser(Long userId) {
+		Optional<User> user = userRepository.findById(userId);
+		if(user.isPresent()){
+			List<Reservation> reservations = reservationRepository.findAllByUser(user.get());
+			return reservationMapper.toDtoList(reservations);
+		}
+		return Collections.emptyList();
 	}
 
 	private Timestamp calculateLeave(Timestamp arrival, EReservationType reservationType){

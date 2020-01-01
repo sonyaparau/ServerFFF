@@ -1,5 +1,7 @@
 package com.mobile.freeforfun.business.restControllers;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.mobile.freeforfun.business.dto.ReservationDto;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.service.ReservationServiceImpl;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
@@ -57,5 +60,14 @@ public class ReservationController {
 		} catch(BusinessException exception){
 			return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
 		}
+	}
+
+	@PostMapping(value = ApiEndpoints.FILTER_RESERVATIONS_AFTER_USERS,
+			produces = APPLICATION_JSON_VALUE)
+	public ResponseEntity getAllLocals(@PathVariable("userId") Long id){
+		Gson gson = new GsonBuilder().create();
+		List<ReservationDto> reservations = reservationService.getReservationsByUser(id);
+		String response = gson.toJson(reservations);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 }

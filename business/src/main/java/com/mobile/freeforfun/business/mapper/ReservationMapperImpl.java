@@ -57,7 +57,6 @@ public class ReservationMapperImpl implements ReservationMapper{
 				.user(userMapper.toEntity(reservationDto.getUser()))
 				.local(localMapper.toEntity(reservationDto.getLocal()))
 				.numberOfPlaces(reservationDto.getNumberOfPlaces())
-//				.table(tableMapper.toEntity(reservationDto.getTable()))
 				.dateTimeReservation(reservationDto.getDateTimeReservation())
 				.dateCreation(reservationDto.getDateTimeCreation())
 				.reservationType(reservationDto.getReservationType())

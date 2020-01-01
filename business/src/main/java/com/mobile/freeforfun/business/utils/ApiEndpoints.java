@@ -28,4 +28,5 @@ public class ApiEndpoints {
     public static final String RESERVATIONS = "/reservations";
     public static final String DELETE_RESERVATION = RESERVATIONS + "/delete/{id}";
     public static final String CREATE_RESERVATION = RESERVATIONS + "/create";
+    public static final String FILTER_RESERVATIONS_AFTER_USERS = RESERVATIONS + "/user/{userId}";
 }
