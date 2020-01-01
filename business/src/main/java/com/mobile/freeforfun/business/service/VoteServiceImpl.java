@@ -1,6 +1,7 @@
 package com.mobile.freeforfun.business.service;
 
 import com.mobile.freeforfun.business.dto.FavoriteLocalsDto;
+import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.mapper.VoteMapper;
 import com.mobile.freeforfun.persistence.enums.EVoteType;
 import com.mobile.freeforfun.persistence.model.FavouriteLocal;
@@ -45,8 +46,8 @@ public class VoteServiceImpl implements VoteService {
             FavouriteLocal vote = new FavouriteLocal();
             vote.setId(new FavouriteLocalCompositeKey(localId, userId));
             vote.setLocal(local.get());
-            vote.setUser(user.get());
             vote.setVoteType(EVoteType.UPVOTE);
+            vote.setUser(user.get());
             return voteMapper.toDto(favoriteLocalRepository.save(vote));
         }
         return null;
@@ -56,6 +57,10 @@ public class VoteServiceImpl implements VoteService {
     public FavoriteLocalsDto downVote(Long localId, Long userId) {
         Optional<Local> local = localRepository.findById(localId);
         Optional<User> user = userRepository.findById(userId);
+
+        FavouriteLocalCompositeKey id = new FavouriteLocalCompositeKey(localId,userId);
+        Optional favouriteLocal = favoriteLocalRepository.findById(id);
+
         if(local.isPresent() && user.isPresent()) {
             FavouriteLocal vote = new FavouriteLocal();
             vote.setId(new FavouriteLocalCompositeKey(localId, userId));
@@ -93,4 +98,30 @@ public class VoteServiceImpl implements VoteService {
         });
         return allUsersWhoVoted;
     }
+
+    @Override
+    public FavoriteLocalsDto getLocal(Long localId, Long userId) {
+        Optional<FavouriteLocal> local = favoriteLocalRepository.findById(new FavouriteLocalCompositeKey(localId,userId));
+        if(local.isPresent())
+            return voteMapper.toDto(local.get());
+        return null;
+    }
+
+    @Override
+    public FavoriteLocalsDto deleteVote(Long localId, Long userId) {
+        Optional<FavouriteLocal> local = favoriteLocalRepository.findById(new FavouriteLocalCompositeKey(localId,userId));
+        if(local.isPresent())
+        {
+            favoriteLocalRepository.deleteById(new FavouriteLocalCompositeKey(localId,userId));
+            return voteMapper.toDto(local.get());
+        }
+        return null;
+    }
+
+    @Override
+    public List<FavoriteLocalsDto> getAll() {
+        return voteMapper.toDtoList(favoriteLocalRepository.findAll());
+    }
+
+
 }

@@ -1,8 +1,13 @@
 package com.mobile.freeforfun.business.mapper;
 
 import com.mobile.freeforfun.business.dto.FavoriteLocalsDto;
+import com.mobile.freeforfun.business.dto.LocalDto;
 import com.mobile.freeforfun.persistence.model.FavouriteLocal;
+import com.mobile.freeforfun.persistence.model.Local;
 import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class VoteMapperImpl implements VoteMapper {
@@ -10,7 +15,7 @@ public class VoteMapperImpl implements VoteMapper {
     public FavouriteLocal toEntity(FavoriteLocalsDto localDto) {
        FavouriteLocal locals= new FavouriteLocal();
        locals.setId(localDto.getId());
-       locals.setVoteType(localDto.getVoteType());
+       locals.setVoteType(localDto.getVote());
        return locals;
     }
 
@@ -18,7 +23,16 @@ public class VoteMapperImpl implements VoteMapper {
     public FavoriteLocalsDto toDto(FavouriteLocal locals) {
         return FavoriteLocalsDto.builder()
                 .id(locals.getId())
-                .voteType(locals.getVoteType())
+                .vote(locals.getVoteType())
                 .build();
+    }
+
+    @Override
+    public List<FavoriteLocalsDto> toDtoList(List<FavouriteLocal> allLocals) {
+        List<FavoriteLocalsDto> localDtos = new ArrayList<>();
+        allLocals.forEach(local ->
+                localDtos.add(toDto(local))
+        );
+        return localDtos;
     }
 }

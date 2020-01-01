@@ -12,5 +12,5 @@ import lombok.EqualsAndHashCode;
 public class FavoriteLocalsDto {
 
     private FavouriteLocalCompositeKey id;
-    private EVoteType voteType;
+    private EVoteType vote;
 }
