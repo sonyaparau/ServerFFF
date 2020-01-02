@@ -2,8 +2,10 @@ package com.mobile.freeforfun.business.restControllers;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mobile.freeforfun.business.dto.LocalTableDto;
 import com.mobile.freeforfun.business.dto.ReservationDto;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
+import com.mobile.freeforfun.business.service.LocalServiceImpl;
 import com.mobile.freeforfun.business.service.ReservationServiceImpl;
 import com.mobile.freeforfun.business.utils.ApiEndpoints;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +49,7 @@ public class ReservationController {
 			reservationService.saveReservation(reservationDto);
 			return new ResponseEntity<>("Reservation successfully created!", HttpStatus.OK);
 		} catch(BusinessException exception){
-			return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+			return new ResponseEntity<>(exception.getMessage(), HttpStatus.CREATED);
 		}
 	}
 
@@ -86,6 +88,15 @@ public class ReservationController {
 		Gson gson = new GsonBuilder().create();
 		ReservationDto reservation = reservationService.getReservationById(id);
 		String response = gson.toJson(reservation);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
+	@PostMapping(value = ApiEndpoints.FREE_PLACES,
+			produces = APPLICATION_JSON_VALUE)
+	public ResponseEntity areFreePlacesNow(@PathVariable("localId") Long localId){
+		Gson gson = new GsonBuilder().create();
+		List<LocalTableDto> freeTables = reservationService.freePlacesNow(localId);
+		String response = gson.toJson(freeTables);
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 }

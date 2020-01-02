@@ -29,6 +29,7 @@ public class ApiEndpoints {
 
     //RESERVATION-Related Paths
     public static final String RESERVATIONS = "/reservations";
+    public static final String FREE_PLACES = RESERVATIONS + "/free/{localId}";
     public static final String GET_RESERVATIONS_BY_ID = RESERVATIONS + "/{id}";
     public static final String DELETE_RESERVATION = RESERVATIONS + "/delete/{id}";
     public static final String CREATE_RESERVATION = RESERVATIONS + "/create";
