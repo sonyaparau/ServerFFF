@@ -61,4 +61,9 @@ public class UserMapperImpl implements UserMapper {
     public List<User> toEntityList(List<UserDto> allUserDtos) {
         return null;
     }
+
+    @Override
+    public List<UserDtoWithPicture> toDtoPictureList(List<UserDtoWithPicture> userDtoWithPictures) {
+        return null;
+    }
 }

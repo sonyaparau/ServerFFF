@@ -114,8 +114,8 @@ public class UserController {
 
     @PostMapping(value = ApiEndpoints.UPLOAD_USER_PICTURE,
     consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity upload(@PathVariable("username") String username,
-                                 @RequestParam("file") MultipartFile file){
+    public ResponseEntity upload(@RequestParam("file") MultipartFile file,
+            @RequestParam("username") String username) throws BusinessException {
         try {
             byte[] array = file.getBytes();
             Blob blob = new javax.sql.rowset.serial.SerialBlob(array);

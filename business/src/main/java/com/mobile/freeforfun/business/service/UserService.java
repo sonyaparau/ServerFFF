@@ -14,5 +14,5 @@ public interface UserService {
     UserDto saveUser(User user) throws BusinessException;
     UserDto updateUser(User user) throws BusinessException;
     String forgotPassword(String username);
-    UserDtoWithPicture uploadPictureToUser(String username, Blob picture);
+    UserDtoWithPicture uploadPictureToUser(String username, Blob picture) throws BusinessException;
 }
