@@ -5,7 +5,6 @@ import com.google.gson.GsonBuilder;
 import com.mobile.freeforfun.business.dto.LocalTableDto;
 import com.mobile.freeforfun.business.dto.ReservationDto;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
-import com.mobile.freeforfun.business.service.LocalServiceImpl;
 import com.mobile.freeforfun.business.service.ReservationServiceImpl;
 import com.mobile.freeforfun.business.utils.ApiEndpoints;
 import org.springframework.beans.factory.annotation.Autowired;
