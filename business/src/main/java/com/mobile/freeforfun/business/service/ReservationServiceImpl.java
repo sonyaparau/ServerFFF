@@ -1,5 +1,6 @@
 package com.mobile.freeforfun.business.service;
 
+import com.mobile.freeforfun.business.dto.LocalTableDto;
 import com.mobile.freeforfun.business.dto.ReservationDto;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.mapper.LocalTableMapper;
@@ -10,6 +11,7 @@ import com.mobile.freeforfun.persistence.model.Local;
 import com.mobile.freeforfun.persistence.model.LocalTable;
 import com.mobile.freeforfun.persistence.model.Reservation;
 import com.mobile.freeforfun.persistence.model.User;
+import com.mobile.freeforfun.persistence.repo.LocalRepository;
 import com.mobile.freeforfun.persistence.repo.LocalTableRepository;
 import com.mobile.freeforfun.persistence.repo.ReservationRepository;
 import com.mobile.freeforfun.persistence.repo.UserRepository;
@@ -34,17 +36,20 @@ public class ReservationServiceImpl implements ReservationService{
 	private UserRepository userRepository;
 	private ReservationMapper reservationMapper;
 	private LocalTableMapper tableMapper;
+	private LocalRepository localRepository;
 
 	public ReservationServiceImpl(
 			ReservationRepository reservationRepository,
 			LocalTableRepository tableRepository,
 			UserRepository userRepository,
-			ReservationMapper reservationMapper, LocalTableMapper tableMapper) {
+			ReservationMapper reservationMapper, LocalTableMapper tableMapper,
+			LocalRepository localRepository) {
 		this.reservationRepository = reservationRepository;
 		this.tableRepository = tableRepository;
 		this.userRepository = userRepository;
 		this.reservationMapper = reservationMapper;
 		this.tableMapper = tableMapper;
+		this.localRepository = localRepository;
 	}
 
 	@Override public ReservationDto getReservationById(Long id) {
@@ -144,6 +149,23 @@ public class ReservationServiceImpl implements ReservationService{
 			}
 		}
 		return null;
+	}
+
+	public List<LocalTableDto> freePlacesNow(Long localId){
+		Optional<Local> local = localRepository.findById(localId);
+		if(local.isPresent()) {
+			List<LocalTable> tables = tableRepository.findAllByLocal(local.get());
+			List<LocalTable> freeTables = new ArrayList<>();
+			if (!tables.isEmpty()) {
+				for (LocalTable table : tables) {
+					if (isFreeTable(table, local.get(), new Timestamp(System.currentTimeMillis()))) {
+						freeTables.add(table);
+					}
+				}
+				return tableMapper.toDtoList(freeTables);
+			}
+		}
+		return Collections.emptyList();
 	}
 
 	private boolean isFreeTable(LocalTable table, Local local, Timestamp dateTime){
