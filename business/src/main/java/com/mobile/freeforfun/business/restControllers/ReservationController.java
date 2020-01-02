@@ -82,7 +82,7 @@ public class ReservationController {
 
 	@PostMapping(value = ApiEndpoints.GET_RESERVATIONS_BY_ID,
 			produces = APPLICATION_JSON_VALUE)
-	public ResponseEntity loginUser(@PathVariable("id") Long id){
+	public ResponseEntity getReservationById(@PathVariable("id") Long id){
 		Gson gson = new GsonBuilder().create();
 		ReservationDto reservation = reservationService.getReservationById(id);
 		String response = gson.toJson(reservation);
