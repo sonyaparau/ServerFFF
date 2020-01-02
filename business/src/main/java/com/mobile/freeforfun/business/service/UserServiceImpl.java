@@ -141,10 +141,14 @@ public class UserServiceImpl implements UserService {
         }
         return "The email you entered is not subscribed to the application!";
     }
-    public UserDtoWithPicture uploadPictureToUser(String username, Blob picture) {
+    public UserDtoWithPicture uploadPictureToUser(String username, Blob picture) throws BusinessException {
         User userById = userRepository.findByUsername(username);
-        userById.setPicture(picture);
-        userRepository.save(userById);
-        return userMapper.toDtoPicture(userById);
+        if(userById != null){
+            userById.setPicture(picture);
+            userRepository.save(userById);
+            return userMapper.toDtoPicture(userById);
+        }
+        else
+            throw new BusinessException("User with this username does not exists in the DB","fff-004");
     }
 }
