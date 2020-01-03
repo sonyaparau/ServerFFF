@@ -3,6 +3,7 @@ package com.mobile.freeforfun.business.restControllers;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mobile.freeforfun.business.dto.UserDto;
+import com.mobile.freeforfun.business.dto.UserDtoWithPicture;
 import com.mobile.freeforfun.business.exceptions.BusinessException;
 import com.mobile.freeforfun.business.service.UserServiceImpl;
 import com.mobile.freeforfun.business.utils.ApiEndpoints;
@@ -114,20 +115,28 @@ public class UserController {
 
     @PostMapping(value = ApiEndpoints.UPLOAD_USER_PICTURE,
     consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity upload(@RequestParam("file") MultipartFile file,
-            @RequestParam("username") String username) throws BusinessException {
+    public ResponseEntity upload(@RequestParam("username") String username,@RequestParam("file") MultipartFile file) throws BusinessException {
+        Gson gson = new GsonBuilder().create();
         try {
             byte[] array = file.getBytes();
             Blob blob = new javax.sql.rowset.serial.SerialBlob(array);
-            userServiceImpl.uploadPictureToUser(username, blob);
+            UserDtoWithPicture  userDtoWithPicture =
+                    userServiceImpl.uploadPictureToUser(username, blob);
+            String response = gson.toJson(userDtoWithPicture);
+            return new ResponseEntity<>(response,HttpStatus.OK);
         } catch (IOException e) {
             e.printStackTrace();
+           return null;
         } catch (SerialException e) {
             e.printStackTrace();
+            return null;
         } catch (SQLException e) {
             e.printStackTrace();
+            return null;
+        }catch (BusinessException exception){
+            String response = gson.toJson(exception.getMessage());
+            return new ResponseEntity<>(response, HttpStatus.CREATED);
         }
-            return new ResponseEntity<>("File is uploaded successfully",HttpStatus.OK);
     }
 
 }
